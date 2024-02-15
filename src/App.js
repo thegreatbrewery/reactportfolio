@@ -11,10 +11,10 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <Header />
       <Routes>
         <Route path='/' element={
           <>
+            <Header />
             <Hero />
             <About />
             <Services />
@@ -22,10 +22,30 @@ function App() {
             <Contact />
           </>
         }></Route>
-        <Route path='/about' element={<About />}></Route>
-        <Route path='/services' element={<Services />}></Route>
-        <Route path='/portfolio' element={<Portfolio />}></Route>
-        <Route path='/contact' element={<Contact />}></Route>
+        <Route path='/about' element={
+          <>
+            <Header />
+            <About />
+          </>
+        }></Route>
+        <Route path='/services' element={
+          <>
+            <Header />
+            <Services />
+          </>
+        }></Route>
+        <Route path='/portfolio' element={
+          <>
+            <Header />
+            <Portfolio />
+          </>
+        }></Route>
+        <Route path='/contact' element={
+          <>
+            <Header />
+            <Contact />
+          </>
+        }></Route>
       </Routes>
       <Footer />
     </>

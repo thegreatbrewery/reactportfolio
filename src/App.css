@@ -377,7 +377,9 @@ section {
   .home .home-content {
     max-width: 50rem;
   }
-
+  .home-img img {
+    max-width: 45rem;
+  }
   .footer {
     padding: 1rem 3%;
   }
@@ -389,8 +391,7 @@ section {
   }
   #home,
   #about,
-  .services .services-container,
-  .portfolio-box {
+  .services .services-container {
     display: flex;
     flex-direction: column;
     padding: 10rem 3%;
@@ -412,6 +413,7 @@ section {
     align-items: center;
     gap: 2.5rem;
   }
+
 }
 
 @media (max-width: 780px) {
@@ -484,7 +486,7 @@ section {
   .contact form textarea {
     margin-bottom: 1rem;
   }
- 
+
   .footer p {
     text-align: center;
   }
