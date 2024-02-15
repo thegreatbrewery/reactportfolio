@@ -210,7 +210,6 @@ section {
 .portfolio {
   position: relative;
   min-height: auto;
-  /* padding-bottom: 10rem; */
   background-color: var(--text-color);
   color: var(--bg-color);
 }
@@ -399,6 +398,11 @@ section {
     align-items: center;
     text-align: center;
   }
+  .contact,
+  .services,
+  .portfolio {
+    padding: 10rem 3%;
+  }
   .about-content h2,
   .about-content p {
     text-align: center;
@@ -413,7 +417,9 @@ section {
     align-items: center;
     gap: 2.5rem;
   }
-
+  .services-container {
+    margin-top: -6rem;
+  }
 }
 
 @media (max-width: 780px) {
@@ -478,7 +484,6 @@ section {
   html {
     font-size: 50%;
   }
-
   .contact form .input-box input {
     margin: 1rem 0;
     width: 100%;
