@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 :root {
@@ -43,6 +43,7 @@ body {
 }
 .nav-link {
   font-size: 1.1rem;
+  font-weight: bold;
   color: var(--text-color);
   transition: 0.5s ease;
   position: relative;
@@ -288,11 +289,10 @@ section {
 .contact form .input-box input,
 .contact form textarea {
   width: 100%;
-  box-shadow: 0 0.1rem 0.5rem var(--main-color);
   padding: 1rem;
   font-size: 1.2rem;
   color: var(--text-color);
-  background: var(--bg-color);
+  background: var(--main-color);
   border-radius: 0.8rem;
   /* margin: .7rem 0; */
 }
