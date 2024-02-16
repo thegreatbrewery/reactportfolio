@@ -9,11 +9,6 @@ function Header() {
 
   const handleMenu = () => {
     setMenuOpen(!menuOpen);
-    if (!menuOpen) {
-      navbarRef.current.classList.add('active');
-    } else {
-      navbarRef.current.classList.remove('active');
-    }
   };
 
   const handleNavLinkClick = () => {
@@ -33,7 +28,7 @@ function Header() {
         <NavLink to='/contact' className='nav-link' onClick={handleNavLinkClick}>Contact</NavLink>
       </nav>
 
-      <div className="bx bx-menu" id="menu-icon" ref={menuIconRef} onClick={handleMenu}></div>
+      <div className={!menuOpen? "bx bx-menu" : "bx bx-x"} id="menu-icon" ref={menuIconRef} onClick={handleMenu}></div>
     </header>
   );
 }

@@ -2,7 +2,7 @@ export default function Contact() {
     return (
         <section className="contact" id="contact">
             <h2 className="heading">Contact <span>Me!</span></h2>
-            <form name="contact-form" method="POST" data-netlify="true">
+            <form name="contact-form" method="POST" netlify>
                 <div class="input-box">
                     <input type="text" placeholder="Full Name" name="fullName" />
                     <input type="email" placeholder="Email Address" name="email" />
